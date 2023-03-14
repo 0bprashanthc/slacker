@@ -44,25 +44,3 @@ Updating status to: :hotel: On vacation
 $ slacker.sh vacation until June 15
 Updating status to: :hotel: On vacation until June 15
 ```
-
-## Helpers
-
-### Zoom helper
-
-There is a helper script for hammerspoon that will automatically set your
-status appropriately when you are in a [zoom](https://zoom.us) meeting.
-
-To install it:
-
-* Install and set up the slacker.sh script (make sure it's in your path)
-* Ensure there is a 'zoom' preset (one is created by default during setup)
-* Install hammerspoon (brew cask install hammerspoon) if you don't have it already.
-* Copy the `zoom_detect.lua` file to ~/.hammerspoon/
-* Add the following line to ~/.hammerspoon/init.lua:
-  `local zoom_detect = require("zoom_detect")`
-
-### Alfred workflow
-
-There is an alfred workflow in [helpers/alfred](helpers/alfred) to let you
-quickly update your slack status from within alfred. See the README in that
-directory for more information on using it.
